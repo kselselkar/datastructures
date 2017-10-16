@@ -1,0 +1,41 @@
+
+Binary Search Tree
+====================
+                Search   Insert  Delete
+Sorted Arrays   O(logn)    O(n)   O(n)
+
+LinkedList      O(n)       O(1)   O(1)
+
+
+But in binary search tree all of them takes O(logn)
+
+Tree Data Structure
+=====================
+Node -- contains data
+
+Edges -- Connect between edges
+
+Root -- Node at the top of the tree.There can be only one root node. We will be having access only to the root node.
+
+Search -- Can be done only one path.
+          For ex...
+          A --Root
+          |
+          C
+        |    |
+       F  _  G
+
+       In above F & G are connected ,but to search the F node path is A-C-F or A-C-G-F
+
+Any node will have edge running upwards. In above F&G is called childerns of C node.
+
+Leaf node : A node which doesn not children is called Leaf node.
+
+Any node can be considered as sub tree. In our case sub tree is C ,F G
+
+Level : Root of the tree is considered to be at level 0 ,children is considered to be at level 1 and so on
+
+Binary Tree
+====================
+
+A binary tree is the one where any node can have atmost only two nodes. Thats why they are called binary tree ,because binary means two.
