@@ -1,0 +1,9 @@
+Reference and Object
+=====================
+
+In this complete tutorial ,one needs to remeber the below.
+
+List abc = null;
+
+Pass abc to a method and check for null. If null create new list and add elements nothing changes to the actual abc.
+So always crate the object then pass the element to the method.

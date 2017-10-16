@@ -39,3 +39,15 @@ Binary Tree
 ====================
 
 A binary tree is the one where any node can have atmost only two nodes. Thats why they are called binary tree ,because binary means two.
+
+Binary Search Tree
+====================
+
+A binary search tree is a binary tree for any given node,the data with value greater than or equal to the its parent node will be in right node and the data with less value will be in left node. This helps to
+search data much faster.
+
+Inserting in binary tree
+=========================
+--Check root != null ,else create it as root node
+--Check value is greater than or equal then it is right node
+    --if right node of
