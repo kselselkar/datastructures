@@ -43,6 +43,63 @@ public class BinarySearchTree {
     }
 
 
+    private void inOrder(TreeNode treeNode){
+
+        if(treeNode.getLeftChild() != null){
+            inOrder(treeNode.getLeftChild());
+        }
+        System.out.println(treeNode.getData());
+        if(treeNode.getRightChild() != null){
+            inOrder(treeNode.getRightChild());
+        }
+    }
+
+    private void preOrder(TreeNode treeNode){
+
+        System.out.println(treeNode.getData());
+        if(treeNode.getLeftChild() != null){
+            inOrder(treeNode.getLeftChild());
+        }
+
+        if(treeNode.getRightChild() != null){
+            inOrder(treeNode.getRightChild());
+        }
+    }
+
+    private void postOrder(TreeNode treeNode){
+
+        if(treeNode.getLeftChild() != null){
+            inOrder(treeNode.getLeftChild());
+        }
+
+        if(treeNode.getRightChild() != null){
+            inOrder(treeNode.getRightChild());
+        }
+        System.out.println(treeNode.getData());
+    }
+
+    private TreeNode smallestElement(TreeNode treeNode){
+
+        if(treeNode != null && treeNode.getLeftChild() != null){
+            return smallestElement(treeNode.getLeftChild());
+
+        }
+        return treeNode;
+    }
+
+
+    private TreeNode biggestElement(TreeNode treeNode){
+
+        if(treeNode != null && treeNode.getRightChild() != null){
+            return biggestElement(treeNode.getRightChild());
+
+        }
+        return treeNode;
+    }
+
+    private void largestElement(TreeNode treeNode){
+
+    }
 
     public void delete(int data) {
 
@@ -63,6 +120,9 @@ public class BinarySearchTree {
         bs.insert(18, bs.rootNode);
         System.out.println("insertion done");
         System.out.println("finding node " + bs.find(18,bs.rootNode).getData());
+        bs.inOrder(bs.rootNode);
+        System.out.println("smallest node " + bs.smallestElement(bs.rootNode).getData());
+        System.out.println("biggest node " + bs.biggestElement(bs.rootNode).getData());
 
     }
 }

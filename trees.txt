@@ -46,8 +46,44 @@ Binary Search Tree
 A binary search tree is a binary tree for any given node,the data with value greater than or equal to the its parent node will be in right node and the data with less value will be in left node. This helps to
 search data much faster.
 
-Inserting in binary tree
-=========================
---Check root != null ,else create it as root node
---Check value is greater than or equal then it is right node
-    --if right node of
+Binary Search Tree Traversal
+===============================
+Pre Order //used in compiler kind of program
+Visit root
+Visit left
+Visit right
+
+In Order <most used>
+Traverse the complete left tree <finish all elements in left of root>
+Visit root
+Traverse the complete right tree <finish all elements in right of root>
+
+#but even in left in-order should be followed
+For ex
+                      52
+        33                        65
+   25        39             60          78
+ 12  27   34    48                  72      90
+
+ Prints :   12 25 27 33 34 39 48 52 60 65 72 78 90
+
+Post Order //used in compiler kind of program
+Visit left
+Visit right
+Visit root
+
+Largest & smallest element in tree
+--Left will contain the smaller & right will contain the larget
+--Keep traversing the node until there is no left child and same for right
+
+Balanced vs Unbalanced tree
+
+An unbalanced tree might take O(n) to search so its good to have tree to be balanced. Balanced trees are AVL & redblack tree etc.
+
+Height of a binary tree
+========================
+How many layers a binary tree has that determines the height of the binary tree.
+
+Layer1 has one node 2pow0 ,layer2 has two nodes 2pow1 ,layer3 has three nodes 2pow3 ..... 2 pow h-1
+
+

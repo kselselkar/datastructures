@@ -1,0 +1,18 @@
+Understanding recursion
+
+Recusrion is a process where it keeps all its call in a recursion stack. So if there is not a breaking condition it will result in stackoverflow error.
+Recursion occupies more memory space as it needs to keep stack in memory
+Recursion will break even there is a breaking condition if the breaking condition is deep. Becuase it keeps putting the elements the the stack
+
+Java does not support tail recursion and it supports only head recursion
+
+In a program ,recusion call are kept on added in the stack
+For ex
+n*factorial(n-1) let say n = 4
+
+call 4 n = 1
+call 3 n = 2 * factorial(2-1) =1 => 2*1 =2
+call 2 n = 3 * factorial(2-1) => 3*2 = 6
+call 1 n = 4 * factorial(4-1)
+
+
