@@ -2,3 +2,5 @@
 .gitignore
 .idea/
 datastructures.iml
+.mvn/
+datapi-runtime/.mvn/
